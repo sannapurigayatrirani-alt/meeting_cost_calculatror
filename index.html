@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Meeting Cost Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Meeting Cost Calculator</h2>
+
+    <div class="box">
+
+        <h3>Add Employee</h3>
+
+        <input type="text" id="employeeName" placeholder="Employee Name">
+        <input type="number" id="employeeSalary" placeholder="Hourly Salary">
+
+        <button onclick="addParticipant()">Add Participant</button>
+
+        <h3>Participants</h3>
+        <div id="participantList"></div>
+
+        <h3>Meeting Details</h3>
+
+        <input type="number" id="meetingDuration" placeholder="Duration (minutes)">
+        <br><br>
+
+        <textarea id="meetingAgenda" placeholder="Meeting agenda"></textarea>
+
+        <br><br>
+
+        <button onclick="calculateCost()">Calculate</button>
+
+        <h3>Result</h3>
+
+        <p>Total Cost: <span id="totalCost">0</span></p>
+        <p>Cost Per Minute: <span id="costPerMinute">0</span></p>
+        <p>Recommendation: <span id="recommendation">---</span></p>
+
+        <h3>Past Meetings</h3>
+        <div id="meetingHistory"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
